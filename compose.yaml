@@ -1,0 +1,11 @@
+﻿services:
+  chatwebsocketserver:
+    image: chatwebsocketserver
+    build:
+      context: .
+      dockerfile: ChatWebSocket.Server/Dockerfile
+  chatwebsocket:
+    image: chatwebsocket
+    build:
+      context: .
+      dockerfile: ChatWebSocket/Dockerfile

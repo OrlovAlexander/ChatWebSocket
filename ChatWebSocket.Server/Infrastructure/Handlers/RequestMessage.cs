@@ -1,0 +1,9 @@
+using System.Net.WebSockets;
+using ChatWebSocket.Server.HandlersModels;
+
+namespace ChatWebSocket.Server.Infrastructure.Handlers;
+
+public class RequestMessage : IRequestMessage
+{
+    public WebSocket WebSocket { get; set; }
+}
