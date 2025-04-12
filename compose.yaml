@@ -9,3 +9,5 @@
     build:
       context: .
       dockerfile: ChatWebSocket/Dockerfile
+    depends_on:
+      - chatwebsocketserver
