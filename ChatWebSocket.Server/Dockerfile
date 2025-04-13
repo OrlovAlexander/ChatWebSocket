@@ -18,4 +18,5 @@ RUN dotnet publish "ChatWebSocket.Server.csproj" -c $BUILD_CONFIGURATION -o /app
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
+EXPOSE 9006
 ENTRYPOINT ["dotnet", "ChatWebSocket.Server.dll"]
